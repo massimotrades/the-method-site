@@ -221,7 +221,7 @@ function TheMethodEliteWebsite() {
             <a
               key={item.href}
               href={item.href}
-              className="group relative flex items-center gap-[3px] px-[5px] py-3 text-sm font-bold tracking-[0.18em] text-white/82 transition-all duration-300 hover:text-white"
+              className="group relative flex items-center gap-[3px] px-[5px] py-3 text-sm font-bold text-white/82 transition-all duration-300 hover:text-white"
             >
               {item.label}
 
