@@ -23,9 +23,9 @@ const stats = [
 ];
 
 const navItems = [
-  { href: "#plans", label: "Plans", icon: "book" },
-  { href: "#prop-firms", label: "Prop Firms", icon: "building" },
-  { href: "#trading", label: "What Is Trading", icon: "chart" },
+  { href: "#trading", label: "Who we are" },
+  { href: "#plans", label: "Plans" },
+  { href: "#prop-firms", label: "Prop Firms" },
   { href: "#socials", label: "Socials", icon: "users" },
 ];
 
