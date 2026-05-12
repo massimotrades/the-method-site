@@ -218,13 +218,15 @@ function TheMethodEliteWebsite() {
 
         <nav className="fixed left-1/2 top-6 z-50 flex w-[min(500px,calc(100vw-24px))] -translate-x-1/2 items-center justify-center gap-[2px] rounded-full border border-white/15 bg-black/55 p-2 shadow-[0_0_60px_rgba(0,80,255,.18)] backdrop-blur-xl">
           {navItems.map((item) => (
-            <a
+   <a
   key={item.href}
   href={item.href}
   onClick={(event) => {
     event.preventDefault();
 
-    const section = document.querySelector(item.href);
+    const section = document.getElementById(
+      item.href.replace("#", "")
+    );
 
     if (section) {
       section.scrollIntoView({
@@ -351,7 +353,7 @@ function TheMethodEliteWebsite() {
         </div>
       </section>
 
-      <section id="trading" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
+      <section id="who-we-are" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-5xl font-black tracking-[-.05em]">Who we are?</h2>
          <p className="mt-6 text-lg leading-relaxed text-white/65">
