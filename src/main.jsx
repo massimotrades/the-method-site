@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import "./index.css";
 
 const proofs = [
-  { title: "$88,998+", subtitle: "Lifetime payouts", name: "William R.", tone: "gold", image: "/payouts/payout-1.png" },
-  { title: "$3,000", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-2.png" },
-  { title: "$1,293", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-3.png" },
-  { title: "$1,332", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-4.png" },
-  { title: "$1,304", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-5.png" },
-  { title: "$41,372", subtitle: "Wise payment received", name: "TAKEPROFITTRADER LLC", tone: "green", image: "/payouts/payout-6.png" },
+  { title: "$88,998+", subtitle: "Lifetime payouts", name: "William R.", tone: "gold", image: "/payouts/payout-1.jpg" },
+  { title: "$3,000", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-2.webp" },
+  { title: "$1,293", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-3.webp" },
+  { title: "$1,332", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-4.webp" },
+  { title: "$1,304", subtitle: "Payout certificate", name: "Massimo D.", tone: "blue", image: "/payouts/payout-5.webp" },
+  { title: "$41,372", subtitle: "Wise payment received", name: "TAKEPROFITTRADER LLC", tone: "green", image: "/payouts/payout-6.jpg" },
   { title: "$20,000+", subtitle: "Prop firm payouts", name: "Multiple accounts", tone: "silver", image: "/payouts/payout-7.png" },
   { title: "$22,000+", subtitle: "Payout table", name: "Verified accounts", tone: "silver", image: "/payouts/payout-8.png" },
 ];
