@@ -354,44 +354,83 @@ function TheMethodEliteWebsite() {
         </div>
       </section>
 
-    <section id="who-we-are" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
-  <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+   <section id="who-we-are" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
+  <div className="mx-auto max-w-6xl">
 
-    <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
-      <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
+    <h2 className="text-5xl font-black tracking-[-.05em]">
+      Who we are?
+    </h2>
 
-      <img
-        src="/team/who-we-are.jpg"
-        alt="Massimo and William"
-        className="relative z-10 h-full w-full rounded-[26px] object-cover"
-      />
+    {/* MASSIMO */}
+
+    <div className="mt-14 grid items-center gap-10 md:grid-cols-[0.75fr_1.25fr]">
+
+      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
+        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
+
+        <img
+          src="/team/massimo.jpg"
+          alt="Massimo"
+          className="relative z-10 h-full w-full rounded-[26px] object-cover"
+        />
+      </div>
+
+      <div>
+        <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-400">
+          Massimo
+        </div>
+
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          My name is Massimo, I’m 21 years old — and 7 months ago, my life changed completely.
+        </p>
+
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          After finding consistency in trading and surrounding myself with the right people, I traveled to Dubai at 20 years old alongside William and close trading friends.
+        </p>
+
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          What started as a shared passion for trading quickly turned into something much bigger.
+        </p>
+      </div>
+
     </div>
 
-    <div>
-      <h2 className="text-5xl font-black tracking-[-.05em]">
-        Who we are?
-      </h2>
+    {/* WILLIAM */}
 
-      <p className="mt-6 text-lg leading-relaxed text-white/65">
-        My name is Massimo, I’m 21 years old — and 7 months ago, my life changed completely.
-      </p>
+    <div className="mt-20 grid items-center gap-10 md:grid-cols-[1.25fr_0.75fr]">
 
-      <p className="mt-5 text-lg leading-relaxed text-white/65">
-        After finding consistency in trading and surrounding myself with the right people, I traveled to Dubai at 20 years old alongside William and close trading friends. What started as a shared passion for trading quickly turned into something much bigger.
-      </p>
+      <div>
+        <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-400">
+          William
+        </div>
 
-      <p className="mt-5 text-lg leading-relaxed text-white/65">
-        After seeing the impact William’s guidance had on my own journey, I brought up the idea of building something together to help serious traders develop the same structure, discipline, and mindset that changed our lives.
-      </p>
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          After years of experience in the markets and multiple verified payouts, William developed the models, discipline, and execution frameworks that became the foundation of The Method.
+        </p>
 
-      <p className="mt-5 text-lg leading-relaxed text-white/65">
-        That’s how The Method was born.
-      </p>
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          After seeing the impact his guidance had on other traders, the idea of building a serious community focused on structure and consistency was born.
+        </p>
+
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          Together, we created The Method to help traders avoid the noise and focus on real development.
+        </p>
+      </div>
+
+      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
+        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
+
+        <img
+          src="/team/william.jpg"
+          alt="William"
+          className="relative z-10 h-full w-full rounded-[26px] object-cover"
+        />
+      </div>
+
     </div>
 
   </div>
 </section>
-
        <section id="prop-firms" className="border-t border-white/10 bg-black px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-5xl font-black tracking-[-.05em]">Prop firm focused.</h2>
