@@ -31,3 +31,7 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 0 30px rgba(0, 140, 255, 0.55);
 }
+
+section {
+  scroll-margin-top: 120px;
+}
