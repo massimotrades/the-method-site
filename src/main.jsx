@@ -325,13 +325,16 @@ function TheMethodEliteWebsite() {
               <div className="mt-4 text-5xl font-black">$2,000 USD</div>
               <ul className="mt-6 space-y-3 text-white/70"><li>Full Method model breakdowns</li><li>Live execution guidance</li><li>Psychology and risk management</li><li>Trade reviews and accountability</li></ul>
               <a
-  href="https://discord.com/channels/734628349653286923/1476671539754701003"
+  href="https://discord.gg/tmt"
   target="_blank"
   rel="noopener noreferrer"
   className="cta-button mt-8"
 >
-  Apply Now
+  Join Discord To Apply
 </a>
+              <p className="mt-3 text-sm text-white/45">
+  Open the #🚀｜upgrade channel after joining.
+</p>
             </div>
           </div>
         </div>
