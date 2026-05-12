@@ -216,7 +216,7 @@ function TheMethodEliteWebsite() {
       <section className="relative min-h-screen overflow-hidden">
         <CandleBackground />
 
-        <nav className="fixed left-1/2 top-6 z-50 flex w-[min(560px,calc(100vw-24px))] -translate-x-1/2 items-center justify-center gap-[2px] rounded-full border border-white/15 bg-black/55 p-2 shadow-[0_0_60px_rgba(0,80,255,.18)] backdrop-blur-xl">
+        <nav className="fixed left-1/2 top-6 z-50 flex w-[min(500px,calc(100vw-24px))] -translate-x-1/2 items-center justify-center gap-[2px] rounded-full border border-white/15 bg-black/55 p-2 shadow-[0_0_60px_rgba(0,80,255,.18)] backdrop-blur-xl">
           {navItems.map((item) => (
             <a
               key={item.href}
