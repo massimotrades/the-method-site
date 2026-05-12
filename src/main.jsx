@@ -414,48 +414,156 @@ function TheMethodEliteWebsite() {
       </section>
 
       <section id="plans" className="border-t border-blue-500/10 bg-[#02050b] px-6 py-28">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-5xl font-black tracking-[-.06em] md:text-7xl">Plans built for commitment.</h2>
-          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/65">Start with the free community, then apply for the full mentorship when you’re ready for structure, guidance, and accountability.</p>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            <div className="rounded-3xl border border-white/10 bg-white/[.04] p-8">
-              <h3 className="text-3xl font-black">Free Discord</h3>
-              <div className="mt-4 text-5xl font-black">$0</div>
-              <ul className="mt-6 space-y-3 text-white/65">
-  <li>2 live trading sessions per week</li>
-  <li>Community discussion</li>
-  <li>Market recaps</li>
-  <li>Public education</li>
-</ul>
+  <div className="mx-auto max-w-6xl">
 
-<a
-  href="https://discord.gg/tmt"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cta-button mt-8"
->
-  Join Now
-</a>
-            </div>
-            <div className="rounded-3xl border border-blue-400/25 bg-blue-500/[.08] p-8 shadow-[0_0_60px_rgba(0,119,255,.12)]">
-              <h3 className="text-3xl font-black">Private Mentorship</h3>
-              <div className="mt-4 text-5xl font-black">$2,000 USD</div>
-              <ul className="mt-6 space-y-3 text-white/70"><li>Full Method model breakdowns</li><li>Live execution guidance</li><li>Psychology and risk management</li><li>Trade reviews and accountability</li></ul>
-              <a
-  href="https://form.typeform.com/to/oMTi7RzG"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="cta-button mt-8"
->
-  Apply Now
-</a>
-              <p className="mt-3 text-sm text-white/45">
-                DM Massimo on Discord after filling out. Applications reviewed manually.
-</p>
-            </div>
+    <div className="mb-12">
+      <div className="mb-4 text-xs font-black uppercase tracking-[0.45em] text-blue-400">
+        Choose Your Path
+      </div>
+
+      <h2 className="text-5xl font-black tracking-[-.06em] md:text-7xl">
+        Plans built for <span className="bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent">serious traders.</span>
+      </h2>
+
+      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/65">
+        Start free. Upgrade when you’re ready to take your trading and your future seriously.
+      </p>
+    </div>
+
+    <div className="grid gap-8 md:grid-cols-2">
+
+      {/* FREE DISCORD */}
+      <div className="relative overflow-hidden rounded-[30px] border border-white/15 bg-white/[.035] p-8 shadow-[0_0_60px_rgba(0,0,0,.35)]">
+        <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl" />
+
+        <div className="relative z-10 flex items-center justify-between">
+          <div className="grid h-14 w-14 place-items-center rounded-2xl border border-blue-400/25 bg-black/50 shadow-[0_0_30px_rgba(0,119,255,.18)]">
+            <DiscordIcon className="h-7 w-8 text-white" />
           </div>
+
+          <span className="rounded-full border border-white/20 px-5 py-2 text-sm font-black uppercase text-white">
+            Free
+          </span>
         </div>
-      </section>
+
+        <div className="relative z-10 mt-8">
+          <h3 className="text-3xl font-black">Free Discord</h3>
+
+          <div className="mt-4 flex items-end gap-3">
+            <span className="text-6xl font-black tracking-[-.06em]">$0</span>
+            <span className="pb-2 text-lg font-bold text-white/45">/forever</span>
+          </div>
+
+          <div className="my-8 h-px w-full bg-white/10" />
+
+          <ul className="space-y-4 text-white/72">
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              2 live trading sessions per week
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Community discussion
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Daily market recaps
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Public education & resources
+            </li>
+          </ul>
+
+          <a
+            href="https://discord.gg/tmt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-12 flex h-14 items-center justify-center rounded-xl border border-blue-400/40 bg-black/30 text-base font-black text-white transition hover:border-blue-300 hover:bg-blue-500/10 hover:shadow-[0_0_35px_rgba(0,119,255,.25)]"
+          >
+            Join Free
+          </a>
+
+          <p className="mt-5 text-center text-sm text-white/40">
+            No credit card. No commitment.
+          </p>
+        </div>
+      </div>
+
+      {/* PRIVATE MENTORSHIP */}
+      <div className="relative overflow-hidden rounded-[30px] border border-blue-500/70 bg-blue-500/[.06] p-8 shadow-[0_0_90px_rgba(0,119,255,.20)]">
+        <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.16),transparent_45%)]" />
+
+        <div className="relative z-10 flex items-center justify-between">
+          <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-blue-400 to-blue-800 shadow-[0_0_40px_rgba(0,119,255,.55)]">
+            <span className="text-2xl">♛</span>
+          </div>
+
+          <span className="rounded-full border border-blue-300/50 bg-blue-500/20 px-5 py-2 text-sm font-black uppercase text-blue-100">
+            Premium
+          </span>
+        </div>
+
+        <div className="relative z-10 mt-8">
+          <h3 className="text-3xl font-black">Private Mentorship</h3>
+
+          <div className="mt-4 flex items-end gap-3">
+            <span className="text-6xl font-black tracking-[-.06em]">$2,000</span>
+            <span className="pb-2 text-lg font-bold text-white/45">USD</span>
+          </div>
+
+          <div className="my-8 h-px w-full bg-white/10" />
+
+          <ul className="space-y-4 text-white/76">
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Full Method model breakdowns
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Live execution guidance
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Psychology & risk management training
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Trade reviews & accountability
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Private community access
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Funding guidance & scaling roadmap
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-1 grid h-5 w-5 place-items-center rounded-full border border-blue-400 text-xs text-blue-400">✓</span>
+              Built for consistency. <span className="font-black text-blue-400">Backed by results.</span>
+            </li>
+          </ul>
+
+          <a
+            href="https://form.typeform.com/to/oMTi7RzG"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-12 flex h-14 items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-blue-800 text-base font-black text-white shadow-[0_0_45px_rgba(0,119,255,.35)] transition hover:scale-[1.01] hover:from-blue-500 hover:to-blue-700"
+          >
+            Apply Now
+          </a>
+
+          <p className="mt-5 text-center text-sm text-white/45">
+            Applications reviewed manually. <span className="font-bold text-blue-400">Serious traders only.</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
    <section id="who-we-are" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
   <div className="mx-auto max-w-6xl">
