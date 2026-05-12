@@ -216,12 +216,12 @@ function TheMethodEliteWebsite() {
       <section className="relative min-h-screen overflow-hidden">
         <CandleBackground />
 
-        <nav className="fixed left-1/2 top-6 z-50 flex w-[min(650px,calc(100vw-24px))] -translate-x-1/2 items-center justify-center gap-[2px] rounded-full border border-white/15 bg-black/55 p-2 shadow-[0_0_60px_rgba(0,80,255,.18)] backdrop-blur-xl">
+        <nav className="fixed left-1/2 top-6 z-50 flex w-[min(560px,calc(100vw-24px))] -translate-x-1/2 items-center justify-center gap-[2px] rounded-full border border-white/15 bg-black/55 p-2 shadow-[0_0_60px_rgba(0,80,255,.18)] backdrop-blur-xl">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="group relative flex items-center gap-[3px] px-[5px] py-3 text-sm font-bold text-white/82 transition-all duration-300 hover:text-white"
+              className="group relative flex items-center gap-[3px] px-[5px] py-3 text-sm font-bold tracking-[0.18em] text-white/82 transition-all duration-300 hover:text-white"
             >
               {item.label}
 
