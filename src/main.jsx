@@ -378,7 +378,17 @@ function TheMethodEliteWebsite() {
     </h2>
 
     {/* WILLIAM */}
+    
+<div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
+        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
 
+        <img
+          src="/team/william.jpg"
+          alt="William"
+          className="relative z-10 h-full w-full rounded-[26px] object-cover"
+        />
+      </div>
+    
     <div className="mt-20 grid items-center gap-10 md:grid-cols-[1.25fr_0.75fr]">
 
       <div>
@@ -398,30 +408,8 @@ function TheMethodEliteWebsite() {
           Together, we created The Method to help traders avoid the noise and focus on real development.
         </p>
       </div>
-
-      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
-        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
-
-        <img
-          src="/team/william.jpg"
-          alt="William"
-          className="relative z-10 h-full w-full rounded-[26px] object-cover"
-        />
-      </div>
       
        {/* MASSIMO */}
-
-    <div className="mt-14 grid items-center gap-10 md:grid-cols-[0.75fr_1.25fr]">
-
-      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
-        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
-
-        <img
-          src="/team/massimo.jpg"
-          alt="Massimo"
-          className="relative z-10 h-full w-full rounded-[26px] object-cover"
-        />
-      </div>
 
       <div>
         <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-400">
@@ -439,6 +427,18 @@ function TheMethodEliteWebsite() {
         <p className="mt-5 text-lg leading-relaxed text-white/65">
           What started as a shared passion for trading quickly turned into something much bigger.
         </p>
+      </div>
+      
+      <div className="mt-14 grid items-center gap-10 md:grid-cols-[0.75fr_1.25fr]">
+
+      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
+        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
+
+        <img
+          src="/team/massimo.jpg"
+          alt="Massimo"
+          className="relative z-10 h-full w-full rounded-[26px] object-cover"
+        />
       </div>
 
   </div>
