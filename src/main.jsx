@@ -377,40 +377,6 @@ function TheMethodEliteWebsite() {
       Who we are?
     </h2>
 
-    {/* MASSIMO */}
-
-    <div className="mt-14 grid items-center gap-10 md:grid-cols-[0.75fr_1.25fr]">
-
-      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
-        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
-
-        <img
-          src="/team/massimo.jpg"
-          alt="Massimo"
-          className="relative z-10 h-full w-full rounded-[26px] object-cover"
-        />
-      </div>
-
-      <div>
-        <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-400">
-          Massimo
-        </div>
-
-        <p className="mt-5 text-lg leading-relaxed text-white/65">
-          My name is Massimo, I’m 21 years old — and 7 months ago, my life changed completely.
-        </p>
-
-        <p className="mt-5 text-lg leading-relaxed text-white/65">
-          After finding consistency in trading and surrounding myself with the right people, I traveled to Dubai at 20 years old alongside William and close trading friends.
-        </p>
-
-        <p className="mt-5 text-lg leading-relaxed text-white/65">
-          What started as a shared passion for trading quickly turned into something much bigger.
-        </p>
-      </div>
-
-    </div>
-
     {/* WILLIAM */}
 
     <div className="mt-20 grid items-center gap-10 md:grid-cols-[1.25fr_0.75fr]">
@@ -442,8 +408,38 @@ function TheMethodEliteWebsite() {
           className="relative z-10 h-full w-full rounded-[26px] object-cover"
         />
       </div>
+      
+       {/* MASSIMO */}
 
-    </div>
+    <div className="mt-14 grid items-center gap-10 md:grid-cols-[0.75fr_1.25fr]">
+
+      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
+        <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
+
+        <img
+          src="/team/massimo.jpg"
+          alt="Massimo"
+          className="relative z-10 h-full w-full rounded-[26px] object-cover"
+        />
+      </div>
+
+      <div>
+        <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-400">
+          Massimo
+        </div>
+
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          My name is Massimo, I’m 21 years old — and 7 months ago, my life changed completely.
+        </p>
+
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          After finding consistency in trading and surrounding myself with the right people, I traveled to Dubai at 20 years old alongside William and close trading friends.
+        </p>
+
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          What started as a shared passion for trading quickly turned into something much bigger.
+        </p>
+      </div>
 
   </div>
 </section>
