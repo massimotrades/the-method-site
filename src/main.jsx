@@ -354,26 +354,39 @@ function TheMethodEliteWebsite() {
         </div>
       </section>
 
-      <section id="who-we-are" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-5xl font-black tracking-[-.05em]">Who we are?</h2>
-         <p className="mt-6 text-lg leading-relaxed text-white/65">
-  My name is Massimo, I’m 21 years old — and 7 months ago, my life changed completely.
-</p>
+     <section id="who-we-are" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
+  <div className="mx-auto max-w-6xl">
+    <h2 className="text-5xl font-black tracking-[-.05em]">
+      Who we are?
+    </h2>
 
-<p className="mt-5 text-lg leading-relaxed text-white/65">
-  After finding consistency in trading and surrounding myself with the right people, I traveled to Dubai at 20 years old alongside William and close trading friends. What started as a shared passion for trading quickly turned into something much bigger.
-</p>
+    <div className="relative mt-10 overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
+      <div className="absolute inset-0 rounded-[32px] bg-[radial-gradient(circle_at_center,rgba(0,119,255,.22),transparent_70%)]" />
 
-<p className="mt-5 text-lg leading-relaxed text-white/65">
-  After seeing the impact William’s guidance had on my own journey, I brought up the idea of building something together to help serious traders develop the same structure, discipline, and mindset that changed our lives.
-</p>
+      <img
+        src="/team/who-we-are.jpg"
+        alt="Massimo and William"
+        className="relative z-10 h-full w-full rounded-[26px] object-cover"
+      />
+    </div>
 
-<p className="mt-5 text-lg leading-relaxed text-white/65">
-  That’s how The Method was born.
-</p>
-        </div>
-      </section>
+    <p className="mt-6 text-lg leading-relaxed text-white/65">
+      My name is Massimo, I’m 21 years old — and 7 months ago, my life changed completely.
+    </p>
+
+    <p className="mt-5 text-lg leading-relaxed text-white/65">
+      After finding consistency in trading and surrounding myself with the right people, I traveled to Dubai at 20 years old alongside William and close trading friends. What started as a shared passion for trading quickly turned into something much bigger.
+    </p>
+
+    <p className="mt-5 text-lg leading-relaxed text-white/65">
+      After seeing the impact William’s guidance had on my own journey, I brought up the idea of building something together to help serious traders develop the same structure, discipline, and mindset that changed our lives.
+    </p>
+
+    <p className="mt-5 text-lg leading-relaxed text-white/65">
+      That’s how The Method was born.
+    </p>
+  </div>
+</section>
 
        <section id="prop-firms" className="border-t border-white/10 bg-black px-6 py-24">
         <div className="mx-auto max-w-6xl">
