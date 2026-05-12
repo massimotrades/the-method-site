@@ -396,21 +396,19 @@ function TheMethodEliteWebsite() {
         </p>
 
         <p className="mt-5 text-lg leading-relaxed text-white/65">
-          After years in the markets and multiple verified payouts, his focus became helping serious traders build structure, discipline, and consistency.
+          After years in the markets and multiple 6 figures in verified payouts, his focus became helping relatives find success through trading.
         </p>
+        
+        <p className="mt-5 text-lg leading-relaxed text-white/65">
+          After seeing his close friends find profitability he now seeks to share his knowledge to anyone ready to change their life.
+        </p>
+        
       </div>
     </div>
 
     {/* MASSIMO */}
-    <div className="mt-20 grid items-center gap-10 md:grid-cols-[0.75fr_1.25fr]">
-      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
-        <img
-          src="/team/massimo.jpg"
-          alt="Massimo"
-          className="relative z-10 h-full w-full rounded-[26px] object-cover"
-        />
-      </div>
-
+    <div className="mt-20 grid items-center gap-10 md:grid-cols-[1.25fr_0.75fr]">
+      
       <div>
         <div className="text-sm font-black uppercase tracking-[0.25em] text-blue-400">
           Massimo
@@ -431,6 +429,14 @@ function TheMethodEliteWebsite() {
         <p className="mt-5 text-lg leading-relaxed text-white/65">
           That’s how The Method was born.
         </p>
+      </div>
+      
+      <div className="relative overflow-hidden rounded-[32px] border border-blue-400/25 bg-blue-500/[.06] p-2 shadow-[0_0_80px_rgba(0,119,255,.22)]">
+        <img
+          src="/team/massimo.jpg"
+          alt="Massimo"
+          className="relative z-10 h-full w-full rounded-[26px] object-cover"
+        />
       </div>
     </div>
   </div>
