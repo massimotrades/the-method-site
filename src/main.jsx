@@ -303,10 +303,6 @@ function TheMethodEliteWebsite() {
             ))}
           </div>
 
-          <div className="mt-8 text-center text-xs tracking-[.6em] text-white/42">TRUSTED BY TRADERS WORLDWIDE</div>
-          <div className="mx-auto mt-6 flex max-w-6xl flex-wrap items-center justify-center gap-10 text-2xl font-black uppercase text-white/32">
-            <span>Apex Trader Funding</span><span>Topstep</span><span>Bulenox</span><span>E8</span><span>The Funded Trader</span><span>Funding Pips</span>
-          </div>
         </main>
       </section>
 
