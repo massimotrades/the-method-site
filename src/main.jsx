@@ -340,17 +340,31 @@ function TheMethodEliteWebsite() {
         </div>
       </section>
 
-      <section id="prop-firms" className="border-t border-white/10 bg-black px-6 py-24">
+      <section id="trading" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-5xl font-black tracking-[-.05em]">Prop firm focused.</h2>
-          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/65">Built around risk rules, daily loss limits, payout planning, and the discipline required to survive funded accounts.</p>
+          <h2 className="text-5xl font-black tracking-[-.05em]">Who we are?</h2>
+         <p className="mt-6 text-lg leading-relaxed text-white/65">
+  My name is Massimo, I’m 21 years old — and 7 months ago, my life changed completely.
+</p>
+
+<p className="mt-5 text-lg leading-relaxed text-white/65">
+  After finding consistency in trading and surrounding myself with the right people, I traveled to Dubai at 20 years old alongside William and close trading friends. What started as a shared passion for trading quickly turned into something much bigger.
+</p>
+
+<p className="mt-5 text-lg leading-relaxed text-white/65">
+  After seeing the impact William’s guidance had on my own journey, I brought up the idea of building something together to help serious traders develop the same structure, discipline, and mindset that changed our lives.
+</p>
+
+<p className="mt-5 text-lg leading-relaxed text-white/65">
+  That’s how The Method was born.
+</p>
         </div>
       </section>
 
-      <section id="trading" className="border-t border-white/10 bg-[#02050b] px-6 py-24">
+       <section id="prop-firms" className="border-t border-white/10 bg-black px-6 py-24">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-5xl font-black tracking-[-.05em]">Trading is a process.</h2>
-          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/65">Not guessing. Not chasing. Not gambling. Trading is building a repeatable decision-making framework around structure, timing, risk, and emotional control.</p>
+          <h2 className="text-5xl font-black tracking-[-.05em]">Prop firm focused.</h2>
+          <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/65">Built around risk rules, daily loss limits, payout planning, and the discipline required to survive funded accounts.</p>
         </div>
       </section>
 
