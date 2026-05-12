@@ -203,6 +203,37 @@ function TheMethodEliteWebsite() {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
+  const smoothScrollTo = (targetId) => {
+  const section = document.getElementById(targetId);
+  if (!section) return;
+
+  const navOffset = 100;
+  const targetY = section.getBoundingClientRect().top + window.scrollY - navOffset;
+  const startY = window.scrollY;
+  const distance = targetY - startY;
+  const duration = 850;
+  let startTime = null;
+
+  const easeInOutCubic = (t) =>
+    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+  const animateScroll = (currentTime) => {
+    if (!startTime) startTime = currentTime;
+
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = easeInOutCubic(progress);
+
+    window.scrollTo(0, startY + distance * eased);
+
+    if (progress < 1) {
+      requestAnimationFrame(animateScroll);
+    }
+  };
+
+  requestAnimationFrame(animateScroll);
+};
+  
   const scroll = (dir) => {
     const el = carouselRef.current;
     if (!el) return;
@@ -221,8 +252,10 @@ function TheMethodEliteWebsite() {
   <a
   key={item.href}
   href={item.href}
-  onClick={(event) => {
-    event.preventDefault();
+onClick={(event) => {
+  event.preventDefault();
+  smoothScrollTo(item.href.replace("#", ""));
+}}
 
     const section = document.getElementById(item.href.replace("#", ""));
     if (!section) return;
