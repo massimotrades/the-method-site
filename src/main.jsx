@@ -14,6 +14,14 @@ const proofs = [
   { title: "$22,000+", subtitle: "Payout table", name: "Verified accounts", tone: "silver", image: "/payouts/payout-8.png" },
 ];
 
+const firmLogos = [
+  { name: "Take Profit Trader", image: "/firms/tpt.png" },
+  { name: "Tradeify", image: "/firms/tradeify.png" },
+  { name: "Lucid", image: "/firms/lucid.png" },
+  { name: "Topstep", image: "/firms/topstep.png" },
+  { name: "Alpha Futures", image: "/firms/alpha.png" },
+];
+
 const stats = [
   { icon: "growth", big: "6 Figures+", small: "Verified Payouts" },
   { icon: "radio", big: "2x", small: "Live Trading / Week" },
@@ -191,6 +199,85 @@ function ProofCard({ item }) {
 
 function runSelfTests() {
   return selfTests.every((test) => test.pass);
+}
+
+function FirmCarousel() {
+  const [active, setActive] = React.useState(0);
+
+  const nextFirm = () => {
+    setActive((prev) => (prev + 1) % firmLogos.length);
+  };
+
+  const prevFirm = () => {
+    setActive((prev) => (prev - 1 + firmLogos.length) % firmLogos.length);
+  };
+
+  const getPosition = (index) => {
+    const total = firmLogos.length;
+    const diff = (index - active + total) % total;
+
+    if (diff === 0) return "center";
+    if (diff === 1) return "right";
+    if (diff === total - 1) return "left";
+
+    return "hidden";
+  };
+
+  return (
+    <div className="relative mx-auto mt-20 h-[340px] max-w-5xl overflow-hidden">
+      <button
+        type="button"
+        onClick={prevFirm}
+        className="absolute left-0 top-1/2 z-30 grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-black/60 text-3xl text-white/80 backdrop-blur transition hover:border-blue-400 hover:text-white hover:shadow-[0_0_30px_rgba(0,119,255,.45)]"
+      >
+        ‹
+      </button>
+
+      <button
+        type="button"
+        onClick={nextFirm}
+        className="absolute right-0 top-1/2 z-30 grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-black/60 text-3xl text-white/80 backdrop-blur transition hover:border-blue-400 hover:text-white hover:shadow-[0_0_30px_rgba(0,119,255,.45)]"
+      >
+        ›
+      </button>
+
+      <div className="relative h-full">
+        {firmLogos.map((firm, index) => {
+          const position = getPosition(index);
+
+          const styles = {
+            center:
+              "left-1/2 z-20 -translate-x-1/2 scale-100 opacity-100 blur-0",
+            left:
+              "left-[18%] z-10 -translate-x-1/2 scale-75 opacity-35 blur-[2px]",
+            right:
+              "left-[82%] z-10 -translate-x-1/2 scale-75 opacity-35 blur-[2px]",
+            hidden:
+              "left-1/2 z-0 -translate-x-1/2 scale-50 opacity-0 blur-md pointer-events-none",
+          };
+
+          return (
+            <div
+              key={firm.name}
+              className={`absolute top-1/2 flex w-[320px] -translate-y-1/2 flex-col items-center justify-center text-center transition-all duration-700 ease-out ${styles[position]}`}
+            >
+              <div className="flex h-[180px] w-[320px] items-center justify-center">
+                <img
+                  src={firm.image}
+                  alt={firm.name}
+                  className="max-h-[150px] max-w-[300px] object-contain drop-shadow-[0_0_35px_rgba(0,119,255,.28)]"
+                />
+              </div>
+
+              <div className="mt-8 text-2xl font-black tracking-wide text-white">
+                {firm.name}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 function TheMethodEliteWebsite() {
@@ -441,9 +528,8 @@ function TheMethodEliteWebsite() {
     </div>
   </div>
 </section>
-      <section id="prop-firms" className="border-t border-white/10 bg-black px-6 py-28">
+     <section id="prop-firms" className="border-t border-white/10 bg-black px-6 py-28">
   <div className="mx-auto max-w-6xl">
-
     <div className="text-center">
       <div className="text-xs font-black uppercase tracking-[0.45em] text-blue-400">
         Funding Partners
@@ -458,77 +544,7 @@ function TheMethodEliteWebsite() {
       </p>
     </div>
 
-    <div className="mt-20 overflow-x-auto">
-      <div className="flex min-w-max gap-16 px-4 pb-4">
-
-        {/* TPT */}
-        <div className="flex w-[220px] flex-col items-center justify-center text-center">
-          <img
-            src="/firms/tpt.png"
-            alt="Take Profit Trader"
-            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
-          />
-
-          <div className="mt-6 text-2xl font-black text-white">
-            Take Profit Trader
-          </div>
-        </div>
-
-        {/* TRADEIFY */}
-        <div className="flex w-[220px] flex-col items-center justify-center text-center">
-          <img
-            src="/firms/tradeify.png"
-            alt="Tradeify"
-            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
-          />
-
-          <div className="mt-6 text-2xl font-black text-white">
-            Tradeify
-          </div>
-        </div>
-
-        {/* LUCID */}
-        <div className="flex w-[220px] flex-col items-center justify-center text-center">
-          <img
-            src="/firms/lucid.png"
-            alt="Lucid"
-            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
-          />
-
-          <div className="mt-6 text-2xl font-black text-white">
-            Lucid
-          </div>
-        </div>
-
-        {/* TOPSTEP */}
-        <div className="flex w-[220px] flex-col items-center justify-center text-center">
-          <img
-            src="/firms/topstep.png"
-            alt="Topstep"
-            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
-          />
-
-          <div className="mt-6 text-2xl font-black text-white">
-            Topstep
-          </div>
-        </div>
-
-        {/* ALPHA */}
-        <div className="flex w-[220px] flex-col items-center justify-center text-center">
-          <img
-            src="/firms/alpha.png"
-            alt="Alpha Futures"
-            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
-          />
-
-          <div className="mt-6 text-2xl font-black text-white">
-            Alpha Futures
-          </div>
-        </div>
-
-      </div>
-    </div>
-
+    <FirmCarousel />
   </div>
 </section>
       <section id="socials" className="border-t border-blue-500/10 bg-black px-6 py-28">
