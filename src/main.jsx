@@ -458,74 +458,77 @@ function TheMethodEliteWebsite() {
       </p>
     </div>
 
-    <div className="mt-20 grid items-center gap-12 md:grid-cols-2 lg:grid-cols-5">
+    <div className="mt-20 overflow-x-auto">
+      <div className="flex min-w-max gap-16 px-4 pb-4">
 
-      {/* TPT */}
-      <div className="flex flex-col items-center text-center">
-        <img
-          src="/firms/tpt.png"
-          alt="Take Profit Trader"
-          className="h-20 object-contain transition-all duration-300 hover:scale-105"
-        />
+        {/* TPT */}
+        <div className="flex w-[220px] flex-col items-center justify-center text-center">
+          <img
+            src="/firms/tpt.png"
+            alt="Take Profit Trader"
+            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
+          />
 
-        <div className="mt-5 text-lg font-bold text-white/80">
-          Take Profit Trader
+          <div className="mt-6 text-2xl font-black text-white">
+            Take Profit Trader
+          </div>
         </div>
-      </div>
 
-      {/* TRADEIFY */}
-      <div className="flex flex-col items-center text-center">
-        <img
-          src="/firms/tradeify.png"
-          alt="Tradeify"
-          className="h-20 object-contain transition-all duration-300 hover:scale-105"
-        />
+        {/* TRADEIFY */}
+        <div className="flex w-[220px] flex-col items-center justify-center text-center">
+          <img
+            src="/firms/tradeify.png"
+            alt="Tradeify"
+            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
+          />
 
-        <div className="mt-5 text-lg font-bold text-white/80">
-          Tradeify
+          <div className="mt-6 text-2xl font-black text-white">
+            Tradeify
+          </div>
         </div>
-      </div>
 
-      {/* LUCID */}
-      <div className="flex flex-col items-center text-center">
-        <img
-          src="/firms/lucid.png"
-          alt="Lucid"
-          className="h-20 object-contain transition-all duration-300 hover:scale-105"
-        />
+        {/* LUCID */}
+        <div className="flex w-[220px] flex-col items-center justify-center text-center">
+          <img
+            src="/firms/lucid.png"
+            alt="Lucid"
+            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
+          />
 
-        <div className="mt-5 text-lg font-bold text-white/80">
-          Lucid
+          <div className="mt-6 text-2xl font-black text-white">
+            Lucid
+          </div>
         </div>
-      </div>
 
-      {/* TOPSTEP */}
-      <div className="flex flex-col items-center text-center">
-        <img
-          src="/firms/topstep.png"
-          alt="Topstep"
-          className="h-20 object-contain transition-all duration-300 hover:scale-105"
-        />
+        {/* TOPSTEP */}
+        <div className="flex w-[220px] flex-col items-center justify-center text-center">
+          <img
+            src="/firms/topstep.png"
+            alt="Topstep"
+            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
+          />
 
-        <div className="mt-5 text-lg font-bold text-white/80">
-          Topstep
+          <div className="mt-6 text-2xl font-black text-white">
+            Topstep
+          </div>
         </div>
-      </div>
 
-      {/* ALPHA */}
-      <div className="flex flex-col items-center text-center">
-        <img
-          src="/firms/alpha.png"
-          alt="Alpha Futures"
-          className="h-20 object-contain transition-all duration-300 hover:scale-105"
-        />
+        {/* ALPHA */}
+        <div className="flex w-[220px] flex-col items-center justify-center text-center">
+          <img
+            src="/firms/alpha.png"
+            alt="Alpha Futures"
+            className="h-24 w-auto object-contain transition-all duration-300 hover:scale-105"
+          />
 
-        <div className="mt-5 text-lg font-bold text-white/80">
-          Alpha Futures
+          <div className="mt-6 text-2xl font-black text-white">
+            Alpha Futures
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
+
   </div>
 </section>
       <section id="socials" className="border-t border-blue-500/10 bg-black px-6 py-28">
