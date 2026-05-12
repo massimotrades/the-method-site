@@ -1,6 +1,7 @@
 import React, { useMemo, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import { motion } from "framer-motion";
+import "./index.css";
 
 const proofs = [
   { title: "$88,998+", subtitle: "Lifetime payouts", name: "William R.", tone: "gold", image: "/payouts/payout-1.png" },
