@@ -367,21 +367,33 @@ function TheMethodEliteWebsite() {
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             <a href="https://x.com/massimotrades" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://x.com/massimotrades")} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:shadow-[0_0_45px_rgba(0,119,255,.18)]">
               <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/20 blur-2xl transition duration-300 group-hover:bg-blue-400/35" />
-              <div className="relative z-10 text-3xl font-black">X</div>
+              <img
+  src="https://cdn.simpleicons.org/x/white"
+  alt="X"
+  className="relative z-10 h-8 w-8"
+/>
               <div className="relative z-10 mt-5 text-xl font-black">Massimo Trades</div>
               <div className="relative z-10 mt-2 text-white/55">@massimotrades</div>
             </a>
 
             <a href="https://www.instagram.com/massimotrades_/" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://www.instagram.com/massimotrades_/")} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:shadow-[0_0_45px_rgba(0,119,255,.18)]">
               <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/20 blur-2xl transition duration-300 group-hover:bg-blue-400/35" />
-              <div className="relative z-10 text-3xl font-black">IG</div>
+             <img
+  src="https://cdn.simpleicons.org/instagram/white"
+  alt="Instagram"
+  className="h-8 w-8"
+/>
               <div className="relative z-10 mt-5 text-xl font-black">Instagram</div>
               <div className="relative z-10 mt-2 text-white/55">@massimotrades_</div>
             </a>
 
             <a href="https://www.youtube.com/@massimofx" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://www.youtube.com/@massimofx")} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:shadow-[0_0_45px_rgba(0,119,255,.18)]">
               <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/20 blur-2xl transition duration-300 group-hover:bg-blue-400/35" />
-              <div className="relative z-10 text-3xl font-black">YT</div>
+            <img
+  src="https://cdn.simpleicons.org/youtube/white"
+  alt="YouTube"
+  className="h-8 w-8"
+/>
               <div className="relative z-10 mt-5 text-xl font-black">YouTube</div>
               <div className="relative z-10 mt-2 text-white/55">@massimofx</div>
             </a>
