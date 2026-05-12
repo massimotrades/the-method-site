@@ -23,10 +23,10 @@ const stats = [
 ];
 
 const navItems = [
-  { href: "#trading", label: "Who we are" },
   { href: "#plans", label: "Plans" },
+  { href: "#who-we-are", label: "Who We Are" },
   { href: "#prop-firms", label: "Prop Firms" },
-  { href: "#socials", label: "Socials", icon: "users" },
+  { href: "#socials", label: "Socials" },
 ];
 
 const selfTests = [
@@ -223,7 +223,6 @@ function TheMethodEliteWebsite() {
               href={item.href}
               className="group relative flex items-center gap-[3px] px-[5px] py-3 text-sm font-bold text-white/82 transition-all duration-300 hover:text-white"
             >
-              <Icon name={item.icon} className="h-[19px] w-[19px] text-blue-500" />
               {item.label}
 
               <span className="absolute bottom-[7px] left-2 h-[2px] w-0 rounded-full bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-300 shadow-[0_0_12px_rgba(0,119,255,.9)] transition-all duration-300 ease-out group-hover:w-[calc(100%-8px)]" />
