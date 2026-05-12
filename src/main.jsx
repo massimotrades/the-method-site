@@ -304,12 +304,34 @@ function TheMethodEliteWebsite() {
             <div className="rounded-3xl border border-white/10 bg-white/[.04] p-8">
               <h3 className="text-3xl font-black">Free Discord</h3>
               <div className="mt-4 text-5xl font-black">$0</div>
-              <ul className="mt-6 space-y-3 text-white/65"><li>2 live trading sessions per week</li><li>Community discussion</li><li>Market recaps</li><li>Public education</li></ul>
+              <ul className="mt-6 space-y-3 text-white/65">
+  <li>2 live trading sessions per week</li>
+  <li>Community discussion</li>
+  <li>Market recaps</li>
+  <li>Public education</li>
+</ul>
+
+<a
+  href="https://discord.gg/tmt"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cta-button mt-8"
+>
+  Join Now
+</a>
             </div>
             <div className="rounded-3xl border border-blue-400/25 bg-blue-500/[.08] p-8 shadow-[0_0_60px_rgba(0,119,255,.12)]">
               <h3 className="text-3xl font-black">Private Mentorship</h3>
               <div className="mt-4 text-5xl font-black">$2,000 USD</div>
               <ul className="mt-6 space-y-3 text-white/70"><li>Full Method model breakdowns</li><li>Live execution guidance</li><li>Psychology and risk management</li><li>Trade reviews and accountability</li></ul>
+              <a
+  href="https://discord.gg/tmt"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cta-button mt-8"
+>
+  Apply Now
+</a>
             </div>
           </div>
         </div>
