@@ -454,101 +454,80 @@ function TheMethodEliteWebsite() {
       </h2>
 
       <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/60">
-        These are some of the proprietary trading firms actively used inside The Method community.
+        Firms actively used inside The Method community.
       </p>
     </div>
 
-    <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-20 grid items-center gap-12 md:grid-cols-2 lg:grid-cols-5">
 
-      {/* TAKE PROFIT TRADER */}
-      <div className="group rounded-[28px] border border-blue-400/15 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]">
+      {/* TPT */}
+      <div className="flex flex-col items-center text-center">
         <img
           src="/firms/tpt.png"
           alt="Take Profit Trader"
-          className="h-12 object-contain"
+          className="h-20 object-contain transition-all duration-300 hover:scale-105"
         />
 
-        <h3 className="mt-8 text-2xl font-black">
+        <div className="mt-5 text-lg font-bold text-white/80">
           Take Profit Trader
-        </h3>
-
-        <p className="mt-4 text-white/60">
-          One of the firms actively used within our community for funded futures trading.
-        </p>
+        </div>
       </div>
 
       {/* TRADEIFY */}
-      <div className="group rounded-[28px] border border-blue-400/15 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]">
+      <div className="flex flex-col items-center text-center">
         <img
           src="/firms/tradeify.png"
           alt="Tradeify"
-          className="h-12 object-contain"
+          className="h-20 object-contain transition-all duration-300 hover:scale-105"
         />
 
-        <h3 className="mt-8 text-2xl font-black">
+        <div className="mt-5 text-lg font-bold text-white/80">
           Tradeify
-        </h3>
-
-        <p className="mt-4 text-white/60">
-          A growing futures prop firm trusted by many serious traders.
-        </p>
+        </div>
       </div>
 
       {/* LUCID */}
-      <div className="group rounded-[28px] border border-blue-400/15 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]">
+      <div className="flex flex-col items-center text-center">
         <img
           src="/firms/lucid.png"
           alt="Lucid"
-          className="h-12 object-contain"
+          className="h-20 object-contain transition-all duration-300 hover:scale-105"
         />
 
-        <h3 className="mt-8 text-2xl font-black">
+        <div className="mt-5 text-lg font-bold text-white/80">
           Lucid
-        </h3>
-
-        <p className="mt-4 text-white/60">
-          Used by members looking for flexibility and modern evaluation structures.
-        </p>
+        </div>
       </div>
 
       {/* TOPSTEP */}
-      <div className="group rounded-[28px] border border-blue-400/15 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]">
+      <div className="flex flex-col items-center text-center">
         <img
           src="/firms/topstep.png"
           alt="Topstep"
-          className="h-12 object-contain"
+          className="h-20 object-contain transition-all duration-300 hover:scale-105"
         />
 
-        <h3 className="mt-8 text-2xl font-black">
+        <div className="mt-5 text-lg font-bold text-white/80">
           Topstep
-        </h3>
-
-        <p className="mt-4 text-white/60">
-          One of the most established futures funding firms in the industry.
-        </p>
+        </div>
       </div>
 
-      {/* ALPHA FUTURES */}
-      <div className="group rounded-[28px] border border-blue-400/15 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]">
+      {/* ALPHA */}
+      <div className="flex flex-col items-center text-center">
         <img
           src="/firms/alpha.png"
           alt="Alpha Futures"
-          className="h-12 object-contain"
+          className="h-20 object-contain transition-all duration-300 hover:scale-105"
         />
 
-        <h3 className="mt-8 text-2xl font-black">
+        <div className="mt-5 text-lg font-bold text-white/80">
           Alpha Futures
-        </h3>
-
-        <p className="mt-4 text-white/60">
-          Another prop firm ecosystem commonly discussed and used inside the community.
-        </p>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
-
       <section id="socials" className="border-t border-blue-500/10 bg-black px-6 py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10">
