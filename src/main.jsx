@@ -655,91 +655,148 @@ function TheMethodEliteWebsite() {
     <FirmCarousel />
   </div>
 </section>
-      <section id="socials" className="border-t border-blue-500/10 bg-black px-6 py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-10">
-            <div className="mb-4 text-xs font-black uppercase tracking-[.55em] text-blue-400">Connect With The Method</div>
-            <h2 className="text-5xl font-black tracking-[-.06em] md:text-7xl">Follow the journey.</h2>
-            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/65">
-              Market breakdowns, live trading clips, community updates, mentorship content, and the full Method ecosystem across every platform.
-            </p>
-          </div>
-          
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            <a href="https://x.com/massimotrades" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://x.com/massimotrades")} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:shadow-[0_0_45px_rgba(0,119,255,.18)]">
-              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/20 blur-2xl transition duration-300 group-hover:bg-blue-400/35" />
-              <img
-  src="https://cdn.simpleicons.org/x/white"
-  alt="X"
-  className="relative z-10 h-8 w-8"
-/>
-              <div className="relative z-10 mt-5 text-xl font-black">Massimo Trades</div>
-              <div className="relative z-10 mt-2 text-white/55">@massimotrades</div>
-            </a>
+      <section id="socials" className="border-t border-white/10 bg-black px-6 py-24">
+  <div className="mx-auto max-w-6xl">
 
-        <a
-  href="https://x.com/williamtradesnq"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)] md:col-span-1 lg:col-start-1"
->
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+    <div className="mb-14">
+      <div className="text-xs font-black uppercase tracking-[0.45em] text-blue-400">
+        Connect With The Method
+      </div>
 
-  <div className="relative z-10">
-    <div className="mb-6">
-      <svg
-        viewBox="0 0 24 24"
-        className="h-10 w-10 fill-white"
+      <h2 className="mt-5 text-5xl font-black tracking-[-.06em] md:text-7xl">
+        Follow the journey.
+      </h2>
+
+      <p className="mt-5 max-w-3xl text-lg leading-relaxed text-white/65">
+        Market breakdowns, live trading clips, community updates, mentorship content, and the full Method ecosystem across every platform.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
+
+      {/* MASSIMO X */}
+      <a
+        href="https://x.com/massimotrades"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
       >
-        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932Z"/>
-      </svg>
-    </div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
 
-    <div className="text-2xl font-black text-white">
-      William
-    </div>
+        <div className="relative z-10">
+          <svg
+            viewBox="0 0 24 24"
+            className="h-10 w-10 fill-white"
+          >
+            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932Z"/>
+          </svg>
 
-    <div className="mt-3 text-lg text-white/45">
-      @williamtradesnq
-    </div>
-  </div>
-</a>
+          <div className="mt-8 text-2xl font-black text-white">
+            Massimo Trades
+          </div>
 
-            <a href="https://www.instagram.com/massimotrades_/" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://www.instagram.com/massimotrades_/")} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:shadow-[0_0_45px_rgba(0,119,255,.18)]">
-              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/20 blur-2xl transition duration-300 group-hover:bg-blue-400/35" />
-             <img
-  src="https://cdn.simpleicons.org/instagram/white"
-  alt="Instagram"
-  className="h-8 w-8"
-/>
-              <div className="relative z-10 mt-5 text-xl font-black">Instagram</div>
-              <div className="relative z-10 mt-2 text-white/55">@massimotrades_</div>
-            </a>
-
-            <a href="https://www.youtube.com/@massimofx" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://www.youtube.com/@massimofx")} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:shadow-[0_0_45px_rgba(0,119,255,.18)]">
-              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/20 blur-2xl transition duration-300 group-hover:bg-blue-400/35" />
-            <img
-  src="https://cdn.simpleicons.org/youtube/white"
-  alt="YouTube"
-  className="h-8 w-8"
-/>
-              <div className="relative z-10 mt-5 text-xl font-black">YouTube</div>
-              <div className="relative z-10 mt-2 text-white/55">@massimofx</div>
-            </a>
-
-            <a href="https://discord.gg/tmt" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://discord.gg/tmt")} className="group relative overflow-hidden rounded-3xl border border-blue-400/30 bg-blue-500/[.08] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-300/60 hover:shadow-[0_0_55px_rgba(0,119,255,.28)]">
-              <motion.div
-                className="absolute -right-12 -top-12 h-44 w-44 rounded-full bg-blue-500/30 blur-2xl"
-                animate={{ scale: [1, 1.18, 1], opacity: [0.55, 0.95, 0.55] }}
-                transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-              />
-              <DiscordIcon className="relative z-10 h-8 w-10 text-blue-300" />
-              <div className="relative z-10 mt-5 text-xl font-black">Discord</div>
-              <div className="relative z-10 mt-2 text-white/60">discord.gg/tmt</div>
-            </a>
+          <div className="mt-3 text-lg text-white/45">
+            @massimotrades
           </div>
         </div>
-      </section>
+      </a>
+
+      {/* INSTAGRAM */}
+      <a
+        href="https://instagram.com/massimotrades_"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+
+        <div className="relative z-10">
+          <Instagram className="h-10 w-10 text-white" />
+
+          <div className="mt-8 text-2xl font-black text-white">
+            Instagram
+          </div>
+
+          <div className="mt-3 text-lg text-white/45">
+            @massimotrades_
+          </div>
+        </div>
+      </a>
+
+      {/* YOUTUBE */}
+      <a
+        href="https://youtube.com/@massimofx"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+
+        <div className="relative z-10">
+          <Youtube className="h-10 w-10 text-white" />
+
+          <div className="mt-8 text-2xl font-black text-white">
+            YouTube
+          </div>
+
+          <div className="mt-3 text-lg text-white/45">
+            @massimofx
+          </div>
+        </div>
+      </a>
+
+      {/* DISCORD */}
+      <a
+        href="https://discord.gg/tmt"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative overflow-hidden rounded-[28px] border border-blue-400/25 bg-blue-500/[.05] p-8 transition-all duration-300 hover:border-blue-400/45 hover:bg-blue-500/[.08] hover:shadow-[0_0_60px_rgba(0,119,255,.18)]"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.18),transparent_45%)]" />
+
+        <div className="relative z-10">
+          <DiscordIcon className="h-10 w-10 text-[#8ab4ff]" />
+
+          <div className="mt-8 text-2xl font-black text-white">
+            Discord
+          </div>
+
+          <div className="mt-3 text-lg text-white/45">
+            discord.gg/tmt
+          </div>
+        </div>
+      </a>
+
+      {/* WILLIAM X */}
+      <a
+        href="https://x.com/williamtradesnq"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)] lg:row-start-2"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+
+        <div className="relative z-10">
+          <svg
+            viewBox="0 0 24 24"
+            className="h-10 w-10 fill-white"
+          >
+            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932Z"/>
+          </svg>
+
+          <div className="mt-8 text-2xl font-black text-white">
+            William
+          </div>
+
+          <div className="mt-3 text-lg text-white/45">
+            @williamtradesnq
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
     </div>
   );
 }
