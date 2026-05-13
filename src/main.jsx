@@ -713,7 +713,11 @@ function TheMethodEliteWebsite() {
         <div className="relative z-10">
           <Instagram className="h-10 w-10 text-white" />
 
-          <div className="mt-8 text-2xl font-black text-white">
+          <img
+  src="https://cdn.simpleicons.org/instagram/white"
+  alt="Instagram"
+  className="h-10 w-10"
+/>
             Instagram
           </div>
 
