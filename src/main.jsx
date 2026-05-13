@@ -701,31 +701,31 @@ function TheMethodEliteWebsite() {
         </div>
       </a>
 
-      {/* INSTAGRAM */}
-      <a
-        href="https://instagram.com/massimotrades_"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+     {/* INSTAGRAM */}
+<a
+  href="https://instagram.com/massimotrades_"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
 
-        <div className="relative z-10">
-          <Instagram className="h-10 w-10 text-white" />
+  <div className="relative z-10">
+    <img
+      src="https://cdn.simpleicons.org/instagram/white"
+      alt="Instagram"
+      className="h-10 w-10"
+    />
 
-          <img
-  src="https://cdn.simpleicons.org/instagram/white"
-  alt="Instagram"
-  className="h-10 w-10"
-/>
-            Instagram
-          </div>
+    <div className="mt-8 text-2xl font-black text-white">
+      Instagram
+    </div>
 
-          <div className="mt-3 text-lg text-white/45">
-            @massimotrades_
-          </div>
-        </div>
-      </a>
+    <div className="mt-3 text-lg text-white/45">
+      @massimotrades_
+    </div>
+  </div>
+</a>
 
       {/* YOUTUBE */}
       <a
