@@ -664,7 +664,35 @@ function TheMethodEliteWebsite() {
               Market breakdowns, live trading clips, community updates, mentorship content, and the full Method ecosystem across every platform.
             </p>
           </div>
+ <a
+  href="https://x.com/williamtradesnq"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
 
+  <div className="relative z-10 flex items-center gap-4">
+    <div className="grid h-14 w-14 place-items-center rounded-2xl border border-blue-400/20 bg-black/40">
+      <svg
+        viewBox="0 0 24 24"
+        className="h-7 w-7 fill-white"
+      >
+        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932Z"/>
+      </svg>
+    </div>
+
+    <div>
+      <div className="text-xl font-black">
+        William
+      </div>
+
+      <div className="mt-1 text-white/45">
+        @williamtradesnq
+      </div>
+    </div>
+  </div>
+</a>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             <a href="https://x.com/massimotrades" target="_blank" rel="noopener noreferrer" onClick={openExternal("https://x.com/massimotrades")} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[.04] p-7 transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:shadow-[0_0_45px_rgba(0,119,255,.18)]">
               <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-blue-500/20 blur-2xl transition duration-300 group-hover:bg-blue-400/35" />
@@ -713,35 +741,6 @@ function TheMethodEliteWebsite() {
         </div>
       </section>
     </div>
-    <a
-  href="https://x.com/williamtradesnq"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
->
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
-
-  <div className="relative z-10 flex items-center gap-4">
-    <div className="grid h-14 w-14 place-items-center rounded-2xl border border-blue-400/20 bg-black/40">
-      <svg
-        viewBox="0 0 24 24"
-        className="h-7 w-7 fill-white"
-      >
-        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932Z"/>
-      </svg>
-    </div>
-
-    <div>
-      <div className="text-xl font-black">
-        William
-      </div>
-
-      <div className="mt-1 text-white/45">
-        @williamtradesnq
-      </div>
-    </div>
-  </div>
-</a>
   );
 }
 
