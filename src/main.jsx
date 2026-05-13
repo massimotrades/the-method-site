@@ -683,7 +683,35 @@ function TheMethodEliteWebsite() {
   src="https://cdn.simpleicons.org/instagram/white"
   alt="Instagram"
   className="h-8 w-8"
-/>
+/><a
+  href="https://x.com/williamtradesnq"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/[.03] p-8 transition-all duration-300 hover:border-blue-400/35 hover:bg-blue-500/[.04] hover:shadow-[0_0_50px_rgba(0,119,255,.12)]"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
+
+  <div className="relative z-10 flex items-center gap-4">
+    <div className="grid h-14 w-14 place-items-center rounded-2xl border border-blue-400/20 bg-black/40">
+      <svg
+        viewBox="0 0 24 24"
+        className="h-7 w-7 fill-white"
+      >
+        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932Z"/>
+      </svg>
+    </div>
+
+    <div>
+      <div className="text-xl font-black">
+        William
+      </div>
+
+      <div className="mt-1 text-white/45">
+        @williamtradesnq
+      </div>
+    </div>
+  </div>
+</a>
               <div className="relative z-10 mt-5 text-xl font-black">Instagram</div>
               <div className="relative z-10 mt-2 text-white/55">@massimotrades_</div>
             </a>
