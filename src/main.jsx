@@ -737,7 +737,11 @@ function TheMethodEliteWebsite() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(0,119,255,.12),transparent_40%)] opacity-0 transition duration-500 group-hover:opacity-100" />
 
         <div className="relative z-10">
-          <Youtube className="h-10 w-10 text-white" />
+          <img
+  src="https://cdn.simpleicons.org/youtube/white"
+  alt="YouTube"
+  className="h-10 w-10"
+/>
 
           <div className="mt-8 text-2xl font-black text-white">
             YouTube
