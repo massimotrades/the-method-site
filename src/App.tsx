@@ -5,22 +5,22 @@ const CALENDLY_URL = "https://calendly.com/massimodeangelis8/30min";
 const VSL_EMBED_URL = "";
 
 const payouts = [
-  "/payouts/payout-1.jpg",
-  "/payouts/payout-2.webp",
-  "/payouts/payout-3.webp",
-  "/payouts/payout-4.webp",
-  "/payouts/payout-5.webp",
-  "/payouts/payout-6.jpg",
-  "/payouts/payout-7.png",
-  "/payouts/payout-8.png",
+  "/payout-1.jpg",
+  "/payout-2.webp",
+  "/payout-3.webp",
+  "/payout-4.webp",
+  "/payout-5.webp",
+  "/payout-6.jpg",
+  "/payout-7.png",
+  "/payout-8.png",
 ];
 
 const firms = [
-  { name: "Topstep", logo: "/firms/topstep.webp" },
-  { name: "Tradeify", logo: "/firms/tradeify.webp" },
-  { name: "Lucid Trading", logo: "/firms/lucid.webp" },
-  { name: "Alpha Futures", logo: "/firms/alpha.webp" },
-  { name: "Take Profit Trader", logo: "/firms/tpt.png" },
+  { name: "Topstep", logo: "/topstep.webp" },
+  { name: "Tradeify", logo: "/tradeify.webp" },
+  { name: "Lucid Trading", logo: "/lucid.webp" },
+  { name: "Alpha Futures", logo: "/alpha.webp" },
+  { name: "Take Profit Trader", logo: "/tpt.png" },
 ];
 
 const included = [
@@ -135,13 +135,13 @@ function VslCard() {
     <div className="vsl-card" aria-label="The Method VSL video placeholder">
       <div className="vsl-card__portraits" aria-hidden="true">
         <div className="vsl-portrait vsl-portrait--massimo">
-          <img src="/team/massimo.jpg" alt="" />
+          <img src="/massimo.jpg" alt="" />
         </div>
         <div className="vsl-card__center-mark">
           <Brand compact />
         </div>
         <div className="vsl-portrait vsl-portrait--william">
-          <img src="/team/william.jpg" alt="" />
+          <img src="/william.jpg" alt="" />
         </div>
       </div>
       <span className="vsl-card__shade" aria-hidden="true" />
@@ -337,24 +337,29 @@ export default function Home() {
           <div className="mentor-grid">
             <article className="mentor-card">
               <div className="mentor-card__photo">
-                <img src="/team/massimo.jpg" alt="Massimo De Angelis" loading="lazy" />
+                <img src="/massimo.jpg" alt="Massimo De Angelis" loading="lazy" />
               </div>
               <div className="mentor-card__copy">
                 <span>Co-founder</span>
                 <h3>Massimo De Angelis</h3>
                 <p>Futures trader focused on execution, funded-account consistency, and building rules that hold up under pressure.</p>
-                <a href="https://www.instagram.com/massimotrades_/" target="_blank" rel="noreferrer">@massimotrades_ ↗</a>
+                <div className="mentor-socials">
+                  <a href="https://x.com/massimotrades" target="_blank" rel="noreferrer">X / @massimotrades ↗</a>
+                  <a href="https://www.instagram.com/massimotrades_/" target="_blank" rel="noreferrer">IG / @massimotrades_ ↗</a>
+                </div>
               </div>
             </article>
             <article className="mentor-card">
               <div className="mentor-card__photo mentor-card__photo--william">
-                <img src="/team/william.jpg" alt="William, co-founder of The Method" loading="lazy" />
+                <img src="/william.jpg" alt="William, co-founder of The Method" loading="lazy" />
               </div>
               <div className="mentor-card__copy">
                 <span>Co-founder</span>
                 <h3>William</h3>
                 <p>Futures trader and educator focused on simple market models, disciplined risk, and repeatable session preparation.</p>
-                <a href="https://www.instagram.com/williamtradesnq/" target="_blank" rel="noreferrer">@williamtradesnq ↗</a>
+                <div className="mentor-socials">
+                  <a href="https://x.com/williamtradesnq" target="_blank" rel="noreferrer">X / @williamtradesnq ↗</a>
+                </div>
               </div>
             </article>
           </div>

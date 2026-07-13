@@ -24,7 +24,7 @@ body {
   margin: 0;
   background: var(--ink);
   color: var(--white);
-  font-family: var(--font-geist-sans), Inter, Arial, sans-serif;
+  font-family: var(--font-geist-sans, "Segoe UI"), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -899,11 +899,23 @@ summary {
   line-height: 1.68;
 }
 
-.mentor-card__copy a {
+.mentor-socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 11px 20px;
   margin-top: 28px;
+}
+
+.mentor-socials a {
   color: #7fa7f9;
   font-size: 12px;
   font-weight: 620;
+  transition: color 160ms ease;
+}
+
+.mentor-socials a:hover {
+  color: #fff;
 }
 
 .fit {
