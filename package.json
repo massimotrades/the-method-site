@@ -1,5 +1,5 @@
 {
-  "name": "the-method-trading-vsl",
+  "name": "william-nq-mentorship",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -9,12 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "19.2.6",
-    "react-dom": "19.2.6"
+    "@typeform/embed": "^6.0.0",
+    "react": "^18.3.1",
+    "react-calendly": "^4.4.0",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "6.0.2",
-    "typescript": "5.9.3",
-    "vite": "8.0.13"
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
   }
 }
