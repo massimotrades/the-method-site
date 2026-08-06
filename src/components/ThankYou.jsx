@@ -5,7 +5,7 @@ import Reveal from "./Reveal.jsx";
 const POST_VSL_EMBED_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ";
 
 // TODO: Paste your real Discord invite link here. Leave empty ("") to hide the button.
-const DISCORD_INVITE_URL = "";
+const DISCORD_INVITE_URL = "https://discord.gg/yV59UbMj63";
 
 const checklist = [
   { title: "What happens next", body: "You'll get a confirmation email with your call details. The call is 20 minutes, on video." },
