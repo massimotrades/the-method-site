@@ -27,7 +27,7 @@ his specific payout figures, and his refund guarantee are his content and his
 business claims, not things I can put on your site. What I did take was the
 *structure*: the ticker bar, the "Step 1/2 watch, Step 2/2 book" framing, and
 a results/testimonial wall — rebuilt with original copy and clearly marked
-placeholders (see below) instead of invented numbers or fake reviews.
+placeholders (see below) instead of invented numbers or fake reviews...
 
 ## 1. Install
 
