@@ -1,6 +1,6 @@
 /* ==========================================================================
    WILLIAM NQ MENTORSHIP — "black & gold" VSL funnel
-   Black background, white text, gold (#D4AF37) accent, glassmorphism,
+   Black background, white text, blue (#3B82F6) accent, glassmorphism,
    soft glows, floating particles, fade-up/blur reveals. Premium, minimal.
    ========================================================================== */
 
@@ -10,14 +10,14 @@
   --glass: rgba(255, 255, 255, 0.035);
   --glass-strong: rgba(255, 255, 255, 0.06);
   --line: rgba(255, 255, 255, 0.09);
-  --line-gold: rgba(212, 175, 55, 0.28);
+  --line-gold: rgba(59, 130, 246, 0.28);
   --text: #f4f2ec;
   --muted: #a3a096;
   --faint: #6f6d64;
-  --gold: #d4af37;
-  --gold-bright: #e8c964;
-  --gold-soft: rgba(212, 175, 55, 0.12);
-  --gold-glow: rgba(212, 175, 55, 0.22);
+  --gold: #3b82f6;
+  --gold-bright: #6aa5ff;
+  --gold-soft: rgba(59, 130, 246, 0.12);
+  --gold-glow: rgba(59, 130, 246, 0.22);
 
   --font-display: "Fraunces", "Georgia", serif;
   --font-body: "Inter", "Segoe UI", sans-serif;
@@ -44,7 +44,7 @@ body {
 }
 
 ::selection {
-  background: rgba(212, 175, 55, 0.35);
+  background: rgba(59, 130, 246, 0.35);
 }
 
 h1, h2, h3 {
@@ -123,7 +123,7 @@ button {
   position: absolute;
   bottom: -12px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.8), rgba(212, 175, 55, 0));
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0));
   animation-name: float-up;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -197,8 +197,8 @@ button {
   font-size: 14.5px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #1b1503;
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold) 55%, #b8942b);
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold) 55%, #2563eb);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 12px;
   padding: 16px 34px;
@@ -209,7 +209,7 @@ button {
 
 .btn-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 44px rgba(212, 175, 55, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 44px rgba(59, 130, 246, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.35);
   filter: brightness(1.05);
 }
 
