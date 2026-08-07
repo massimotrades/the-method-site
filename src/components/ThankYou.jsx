@@ -1,8 +1,9 @@
 import React from "react";
 import Reveal from "./Reveal.jsx";
 
-// TODO: Replace with your real post-VSL video (what happens next / how to prepare).
-const POST_VSL_EMBED_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+// Self-hosted video. Put the file at public/post-vsl.mp4 (served from the
+// site root as /post-vsl.mp4 once deployed).
+const POST_VSL_SRC = "/post-vsl.mp4";
 
 // TODO: Paste your real Discord invite link here. Leave empty ("") to hide the button.
 const DISCORD_INVITE_URL = "";
@@ -49,11 +50,12 @@ export default function ThankYou() {
 
           <Reveal delay={270}>
             <div className="vsl-frame">
-              <iframe
-                src={POST_VSL_EMBED_URL}
+              <video
+                src={POST_VSL_SRC}
+                controls
+                playsInline
+                preload="metadata"
                 title="Before your call — what to expect"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
               />
             </div>
           </Reveal>
