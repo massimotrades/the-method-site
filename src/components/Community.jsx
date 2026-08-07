@@ -56,6 +56,7 @@ const features = [
   {
     title: "Lifetime Access",
     body: "Join once, keep access — the community and library stay with you as you grow.",
+    highlight: true,
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
         <path d="M8.5 14.5C6 14.5 4 12.5 4 10s2-4.5 4.5-4.5c3.5 0 4 3 7 3 2.5 0 4.5 2 4.5 4.5s-2 4.5-4.5 4.5c-3.5 0-4-3-7-3z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
@@ -78,7 +79,7 @@ export default function Community() {
         <div className="community-grid">
           {features.map((f, i) => (
             <Reveal key={f.title} delay={(i % 3) * 100}>
-              <div className="glass-card community-card">
+              <div className={`glass-card community-card${f.highlight ? " pulse-glow" : ""}`}>
                 <div className="icon-chip">{f.icon}</div>
                 <h3>{f.title}</h3>
                 <p>{f.body}</p>

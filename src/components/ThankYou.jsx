@@ -73,7 +73,7 @@ export default function ThankYou() {
 
           <Reveal>
             {DISCORD_INVITE_URL ? (
-              <a className="btn-gold" href={DISCORD_INVITE_URL} target="_blank" rel="noreferrer">
+              <a className="btn-gold no-pulse" href={DISCORD_INVITE_URL} target="_blank" rel="noreferrer">
                 Join The Discord
               </a>
             ) : (

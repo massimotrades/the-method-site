@@ -678,6 +678,10 @@ section {
   transition: grid-template-rows 0.35s ease;
 }
 
+.faq-item.open .faq-a {
+  grid-template-rows: 1fr;
+}
+
 .faq-a > div {
   overflow: hidden;
 }
@@ -1159,4 +1163,85 @@ footer {
   transform: translateY(-3px);
   border-color: var(--line-gold);
   box-shadow: 0 0 34px var(--gold-glow);
+}
+
+/* ---------- pulsing highlight (Lifetime Access card) ---------- */
+
+.pulse-glow {
+  position: relative;
+  border-color: var(--line-gold);
+  animation: card-pulse 2.8s ease-in-out infinite;
+}
+
+.pulse-glow .icon-chip {
+  box-shadow: 0 0 20px var(--gold-glow);
+}
+
+@keyframes card-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(59, 130, 246, 0.16),
+      0 0 22px rgba(59, 130, 246, 0.18);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(59, 130, 246, 0.38),
+      0 0 46px rgba(59, 130, 246, 0.45),
+      0 0 90px rgba(59, 130, 246, 0.16);
+  }
+}
+
+/* Hover still lifts the card; keep the glow steady and bright while hovered. */
+.pulse-glow:hover {
+  animation-play-state: paused;
+  box-shadow:
+    0 0 0 1px rgba(59, 130, 246, 0.4),
+    0 0 50px rgba(59, 130, 246, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-glow {
+    animation: none;
+    box-shadow:
+      0 0 0 1px rgba(59, 130, 246, 0.3),
+      0 0 36px rgba(59, 130, 246, 0.32);
+  }
+}
+
+/* ---------- rapid pulse on booking CTAs ---------- */
+/* Applies to every .btn-gold (header, hero CTA, calendly gate, final CTA).
+   Add class "no-pulse" to opt a button out. */
+
+.btn-gold {
+  animation: cta-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes cta-pulse {
+  0%, 100% {
+    box-shadow:
+      0 6px 30px var(--gold-glow),
+      0 0 0 0 rgba(59, 130, 246, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  }
+  50% {
+    box-shadow:
+      0 6px 34px rgba(59, 130, 246, 0.5),
+      0 0 0 9px rgba(59, 130, 246, 0),
+      inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  }
+}
+
+/* Hover takes over: hold it bright and steady instead of pulsing. */
+.btn-gold:hover {
+  animation-play-state: paused;
+}
+
+.btn-gold.no-pulse {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-gold {
+    animation: none;
+  }
 }

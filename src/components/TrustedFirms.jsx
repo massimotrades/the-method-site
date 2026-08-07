@@ -5,7 +5,7 @@ import Reveal from "./Reveal.jsx";
 const LOGOS = [
   { file: "tpt.png", alt: "TPT" },
   { file: "topstep.webp", alt: "Topstep" },
-  { file: "alpha.webp", alt: "Alpha" },
+  { file: "MFF.png", alt: "MFF" },
   { file: "lucid.webp", alt: "Lucid" },
   { file: "tradeify.webp", alt: "Tradeify" },
 ];
