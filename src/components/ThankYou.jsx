@@ -2,10 +2,10 @@ import React from "react";
 import Reveal from "./Reveal.jsx";
 
 // TODO: Replace with your real post-VSL video (what happens next / how to prepare).
-const POST_VSL_EMBED_URL = "https://youtu.be/dtBCFzhik2o";
+const POST_VSL_EMBED_URL = "https://vimeo.com/1216413015?share=copy&fl=sv&fe=ci";
 
 // TODO: Paste your real Discord invite link here. Leave empty ("") to hide the button.
-const DISCORD_INVITE_URL = "";
+const DISCORD_INVITE_URL = "https://discord.gg/A9ZWJZgjZt";
 
 const checklist = [
   { title: "What happens next", body: "You'll get a confirmation email with your call details. The call is 20 minutes, on video." },
