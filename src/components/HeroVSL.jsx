@@ -19,8 +19,7 @@ export default function HeroVSL() {
         </Reveal>
         <Reveal delay={180}>
           <p className="lede">
-            Watch this free training to discover the exact framework we use to help traders
-            become consistently profitable.
+            Watch this 5-minute video on how it made me $400k.
           </p>
         </Reveal>
         <Reveal delay={270}>
