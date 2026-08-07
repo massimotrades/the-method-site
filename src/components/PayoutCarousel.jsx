@@ -6,7 +6,7 @@ import Reveal from "./Reveal.jsx";
 // used, and numbers with no matching file are skipped automatically.
 const TOTAL = 14;
 const EXTS = ["jpg", "jpeg", "png", "webp"];
-const AUTOPLAY_MS = 3500;
+const AUTOPLAY_MS = 3200;
 
 function SlideImage({ n, onDead }) {
   const [extIdx, setExtIdx] = useState(0);
@@ -39,7 +39,7 @@ export default function PayoutCarousel() {
     if (!dead.has(n)) slides.push(n);
   }
   const count = slides.length;
-  const current = count ? Math.min(idx, count - 1) : 0;
+  const current = count ? ((idx % count) + count) % count : 0;
 
   const markDead = useCallback((n) => {
     setDead((prev) => {
@@ -52,7 +52,7 @@ export default function PayoutCarousel() {
   const go = useCallback(
     (dir) => {
       if (!count) return;
-      setIdx((i) => (Math.min(i, count - 1) + dir + count) % count);
+      setIdx((i) => i + dir);
     },
     [count]
   );
@@ -66,9 +66,7 @@ export default function PayoutCarousel() {
     ) {
       return;
     }
-    const t = setInterval(() => {
-      setIdx((i) => (i + 1) % count);
-    }, AUTOPLAY_MS);
+    const t = setInterval(() => setIdx((i) => i + 1), AUTOPLAY_MS);
     return () => clearInterval(t);
   }, [paused, count]);
 
@@ -82,6 +80,22 @@ export default function PayoutCarousel() {
     if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
     touchX.current = null;
     setPaused(false);
+  };
+
+  // Signed shortest circular distance from the current slide.
+  const rel = (i) => {
+    if (count < 2) return i === current ? 0 : 99;
+    let d = i - current;
+    if (d > count / 2) d -= count;
+    if (d < -count / 2) d += count;
+    return d;
+  };
+
+  const posClass = (d) => {
+    if (d === 0) return "center";
+    if (d === -1) return "left";
+    if (d === 1) return "right";
+    return "hidden";
   };
 
   return (
@@ -101,24 +115,29 @@ export default function PayoutCarousel() {
               folder — the carousel fills itself automatically]
             </div>
           ) : (
-            <div className="carousel">
+            <div className="coverflow">
               <div
-                className="carousel-frame"
+                className="cf-stage"
                 onMouseEnter={() => setPaused(true)}
                 onMouseLeave={() => setPaused(false)}
                 onTouchStart={onTouchStart}
                 onTouchEnd={onTouchEnd}
               >
-                <div
-                  className="carousel-track"
-                  style={{ transform: `translateX(-${current * 100}%)` }}
-                >
-                  {slides.map((n) => (
-                    <figure className="carousel-slide" key={n}>
+                {slides.map((n, i) => {
+                  const d = rel(i);
+                  const cls = posClass(d);
+                  return (
+                    <figure
+                      className={`cf-slide ${cls}`}
+                      key={n}
+                      onClick={() => {
+                        if (d === -1 || d === 1) go(d);
+                      }}
+                    >
                       <SlideImage n={n} onDead={markDead} />
                     </figure>
-                  ))}
-                </div>
+                  );
+                })}
 
                 <button
                   className="car-arrow prev"
@@ -134,10 +153,6 @@ export default function PayoutCarousel() {
                 >
                   ›
                 </button>
-
-                <div className="car-counter">
-                  {current + 1} / {count}
-                </div>
               </div>
 
               <div className="car-dots" role="tablist">
