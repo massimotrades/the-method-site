@@ -1,25 +1,62 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import Reveal from "./Reveal.jsx";
 
 // ============================================================================
-// TODO — REPLACE EVERYTHING IN THIS SECTION WITH REAL CONTENT BEFORE LAUNCH.
-// Do not publish invented quotes, names, dollar amounts, or screenshots.
-// Real payout screenshots (with personal details redacted), real Discord
-// messages, and real video testimonials are the strongest version of this.
-// Delete any card you don't have a real replacement for.
+// SCREENSHOTS — just drop files into /public named:
+//   testimonial-1, testimonial-2, testimonial-3, ...  (up to TOTAL below)
+// Any extension works (.png / .jpg / .jpeg / .webp) — it's auto-detected, and
+// numbers with no matching file are skipped. No code changes needed to add
+// or remove screenshots; only bump TOTAL if you go past 12.
 // ============================================================================
-const cards = [
-  { type: "quote", quote: "[Real student quote — what changed and how.]", name: "[Name or handle]", detail: "[$ amount · prop firm]" },
-  { type: "screenshot", label: "[Payout screenshot]", ratio: "4 / 3" },
-  { type: "video", label: "[Video testimonial]" },
-  { type: "discord", label: "[Discord message screenshot]", ratio: "4 / 2.4" },
-  { type: "quote", quote: "[Real student quote.]", name: "[Name or handle]", detail: "[$ amount · prop firm]" },
-  { type: "screenshot", label: "[Profit screenshot]", ratio: "4 / 4.4" },
-  { type: "quote", quote: "[Real student quote.]", name: "[Name or handle]", detail: "[$ amount · prop firm]" },
-  { type: "screenshot", label: "[Payout screenshot]", ratio: "4 / 2.8" },
+const TOTAL = 12;
+const EXTS = ["png", "jpg", "jpeg", "webp"];
+
+// ============================================================================
+// TEXT QUOTES (optional) — these mix into the same grid alongside screenshots.
+// Replace with real student quotes, or set this to [] to show screenshots only.
+// Don't publish invented quotes, names, or dollar amounts.
+// ============================================================================
+const QUOTES = [
+  // { quote: "What changed for them and how.", name: "Name or handle", detail: "$ amount · prop firm" },
 ];
 
+function ShotImage({ n, onDead }) {
+  const [extIdx, setExtIdx] = useState(0);
+
+  if (extIdx >= EXTS.length) return null;
+
+  return (
+    <img
+      src={`/testimonial-${n}.${EXTS[extIdx]}`}
+      alt={`Student testimonial ${n}`}
+      loading="lazy"
+      onError={() => {
+        const next = extIdx + 1;
+        if (next >= EXTS.length) onDead(n);
+        setExtIdx(next);
+      }}
+    />
+  );
+}
+
 export default function SocialProof() {
+  const [dead, setDead] = useState(() => new Set());
+
+  const markDead = useCallback((n) => {
+    setDead((prev) => {
+      const next = new Set(prev);
+      next.add(n);
+      return next;
+    });
+  }, []);
+
+  const shots = [];
+  for (let n = 1; n <= TOTAL; n++) {
+    if (!dead.has(n)) shots.push(n);
+  }
+
+  const nothingYet = shots.length === 0 && QUOTES.length === 0;
+
   return (
     <section id="results" className="social-proof">
       <div className="wrap">
@@ -27,17 +64,21 @@ export default function SocialProof() {
           <div className="section-head center">
             <span className="eyebrow">Student Results</span>
             <h2>Real Students. Real Progress.</h2>
-            <p className="section-sub">
-              Every card below is a placeholder — swap in your real testimonials, payout
-              screenshots, and Discord wins before launch.
-            </p>
           </div>
         </Reveal>
 
-        <div className="masonry">
-          {cards.map((c, i) => (
-            <Reveal key={i} delay={(i % 4) * 90}>
-              {c.type === "quote" ? (
+        {nothingYet ? (
+          <Reveal>
+            <div className="glass-card carousel-empty">
+              [Drop screenshots into the public folder named testimonial-1,
+              testimonial-2, … (.png / .jpg / .webp) — they'll appear here
+              automatically]
+            </div>
+          </Reveal>
+        ) : (
+          <div className="masonry">
+            {QUOTES.map((c, i) => (
+              <Reveal key={`q-${i}`} delay={(i % 4) * 90}>
                 <div className="glass-card proof-quote">
                   <div className="stars">★★★★★</div>
                   <p className="quote">"{c.quote}"</p>
@@ -46,23 +87,18 @@ export default function SocialProof() {
                     <span className="detail">{c.detail}</span>
                   </div>
                 </div>
-              ) : c.type === "video" ? (
-                <div className="glass-card proof-shot proof-video" style={{ aspectRatio: "9 / 12" }}>
-                  <span className="play-badge" aria-hidden="true">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                      <path d="M8 5v14l11-7L8 5z" fill="currentColor" />
-                    </svg>
-                  </span>
-                  {c.label}
+              </Reveal>
+            ))}
+
+            {shots.map((n, i) => (
+              <Reveal key={`s-${n}`} delay={((i + QUOTES.length) % 4) * 90}>
+                <div className="glass-card proof-img">
+                  <ShotImage n={n} onDead={markDead} />
                 </div>
-              ) : (
-                <div className="glass-card proof-shot" style={{ aspectRatio: c.ratio }}>
-                  {c.label}
-                </div>
-              )}
-            </Reveal>
-          ))}
-        </div>
+              </Reveal>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

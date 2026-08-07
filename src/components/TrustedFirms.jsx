@@ -11,8 +11,11 @@ const LOGOS = [
 ];
 
 export default function TrustedFirms() {
-  // Duplicate the set so the marquee can loop seamlessly.
-  const track = [...LOGOS, ...LOGOS];
+  // Repeat the set enough times that each half of the track is wider than any
+  // viewport — otherwise the loop reset shows an empty gap. Must stay an even
+  // number of copies so the -50% keyframe lands exactly on a repeat boundary.
+  const COPIES = 8;
+  const track = Array.from({ length: COPIES }, () => LOGOS).flat();
 
   return (
     <section id="firms" className="firms">
