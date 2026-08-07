@@ -7,8 +7,10 @@ import HeroVSL from "./components/HeroVSL.jsx";
 import BookCTA from "./components/BookCTA.jsx";
 import CalendlySection from "./components/CalendlySection.jsx";
 import PayoutCarousel from "./components/PayoutCarousel.jsx";
+import TrustedFirms from "./components/TrustedFirms.jsx";
 import SocialProof from "./components/SocialProof.jsx";
 import Community from "./components/Community.jsx";
+import Socials from "./components/Socials.jsx";
 import FAQ from "./components/FAQ.jsx";
 import FinalCTA from "./components/FinalCTA.jsx";
 import Footer from "./components/Footer.jsx";
@@ -23,8 +25,10 @@ function Landing() {
         <BookCTA />
         <CalendlySection />
         <PayoutCarousel />
+        <TrustedFirms />
         <SocialProof />
         <Community />
+        <Socials />
         <FAQ />
         <FinalCTA />
       </main>

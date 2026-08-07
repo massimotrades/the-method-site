@@ -8,7 +8,7 @@ const VIDEO_SRC = "/vsl.mp4";
 
 export default function HeroVSL() {
   return (
-    <section className="hero-vsl">
+    <section className="hero-vsl" id="who-is-will">
       <div className="hero-glow" aria-hidden="true" />
       <div className="wrap">
         <Reveal>
@@ -21,7 +21,8 @@ export default function HeroVSL() {
         </Reveal>
         <Reveal delay={180}>
           <p className="lede">
-            Watch this 5-minute video on how it made me $400k.
+            Watch this free training to discover the exact framework we use to help traders
+            become consistently profitable.
           </p>
         </Reveal>
         <Reveal delay={270}>
