@@ -1,8 +1,10 @@
 import React from "react";
 import Reveal from "./Reveal.jsx";
 
-// TODO: Replace with your real hosted VSL — YouTube (unlisted), Vimeo, or Wistia embed URL.
-const VIDEO_EMBED_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+// Self-hosted video. Put the file at public/vsl.mp4 (i.e. it lives at
+// yoursite.com/vsl.mp4 once deployed — Vite serves everything in /public
+// from the site root). Rename here if you use a different filename.
+const VIDEO_SRC = "/vsl.mp4";
 
 export default function HeroVSL() {
   return (
@@ -24,11 +26,12 @@ export default function HeroVSL() {
         </Reveal>
         <Reveal delay={270}>
           <div className="vsl-frame">
-            <iframe
-              src={VIDEO_EMBED_URL}
+            <video
+              src={VIDEO_SRC}
+              controls
+              playsInline
+              preload="metadata"
               title="William NQ Mentorship — free training"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
             />
           </div>
         </Reveal>
