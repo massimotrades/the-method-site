@@ -2,7 +2,7 @@ import React from "react";
 import Reveal from "./Reveal.jsx";
 
 // TODO: Replace with your real post-VSL video (what happens next / how to prepare).
-const POST_VSL_EMBED_URL = "https://www.youtube.com/embed/dQw4w9WgXcQ";
+const POST_VSL_EMBED_URL = "https://youtu.be/dtBCFzhik2o";
 
 // TODO: Paste your real Discord invite link here. Leave empty ("") to hide the button.
 const DISCORD_INVITE_URL = "";
