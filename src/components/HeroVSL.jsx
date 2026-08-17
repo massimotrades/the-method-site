@@ -1,22 +1,17 @@
 import React from "react";
 import Reveal from "./Reveal.jsx";
 
-// Self-hosted video. Put the file at public/vsl.mp4 (i.e. it lives at
-// yoursite.com/vsl.mp4 once deployed — Vite serves everything in /public
-// from the site root). Rename here if you use a different filename.
-const VIDEO_SRC = "/vsl.mp4";
-
 export default function HeroVSL() {
   return (
     <section className="hero-vsl" id="who-is-will">
       <div className="hero-glow" aria-hidden="true" />
       <div className="wrap">
         <Reveal>
-          <span className="eyebrow">Free Training · William NQ Mentorship</span>
+          <span className="eyebrow">Free Training · The Method Trading</span>
         </Reveal>
         <Reveal delay={90}>
           <h1>
-            Trading Doesn't Have To Be <em>Guesswork</em>.
+            The Only Mentorship You'll Ever Need To Finally Get 6-Figure Funded And To Become Profitable. <span className="guaranteed">GUARANTEED.</span>
           </h1>
         </Reveal>
         <Reveal delay={180}>
@@ -27,12 +22,9 @@ export default function HeroVSL() {
         </Reveal>
         <Reveal delay={270}>
           <div className="vsl-frame">
-            <video
-              src={VIDEO_SRC}
-              controls
-              playsInline
-              preload="metadata"
-              title="William NQ Mentorship — free training"
+            <wistia-player
+              media-id="zx08e8p3o1"
+              aspect="1.7777777777777777"
             />
           </div>
         </Reveal>
